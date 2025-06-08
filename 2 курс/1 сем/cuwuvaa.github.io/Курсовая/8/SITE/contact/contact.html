@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="https://everestpanel.com/assets/img/cpu.png">
+        <title>Обратная связь</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="../../main.css">
+        <link rel="stylesheet" href="mobile.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Lobster&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    
+    </head> 
+    <body>
+        <header id="main_header">
+            <img id="logo_img" src="https://cdn-icons-png.flaticon.com/512/689/689338.png">
+            <h1 id="main_cite">Форма обратной связи</h1>
+        </header>
+        <main>
+            <div class="back_div"><a id="back" href="../../index.html">Назад</a></div>
+            <section class="content-block">
+                <h2>Хотите поделиться конфигурацией своего компьютера?</h2>
+                <form action="" method="get">
+                <p>
+                    <label for="name">Имя:</label>
+                    <input type="text" name="name" id="name" placeholder="Иван" required>
+                </p>
+                <p>
+                    <label for="tel">Номер:</label>
+                    <input type="tel"name="tel" id="tel" placeholder="8(999)-999-99-99" required checked>
+                </p>
+                <fieldset>
+                    <legend>Процессор в вашем компьютере</legend>
+                    <p>
+                        <label for="processor_label">AMD: </label>
+                        <input type="radio"name="processor_label" id="processor_label" required><br>
+                        <label for="processor_label">Intel: </label>
+                        <input type="radio"name="processor_label" id="processor_label" required><br><br>
+                        <label id="select_frequency"  for="frequency">Частота процессора:</label><br>
+                        <select required name="frequency" id="frequency">
+                            <option value="default">-- Частота --</option>
+                            <option value="1.5-2">1.5GHz - 2GHz</option>
+                            <option value="1.5">2GHz - 2.5Ghz</option>
+                            <option value="1.5">2.5GHz - 3GHz</option>
+                            <option value="1.5">3GHz - 3.5GHz</option>
+                            <option value="1.5">3.5GHz - 4GHz</option>
+                            <option value="1.5">4GHz - 4.5GHz</option>
+                            <option value="1.5">4.5GHz - и более</option>
+                        </select><br>
+                        <label id="boost" for="boost">Поддержка увеличении частоты:</label><br>
+                        <select size="2" multiple required name="boost" id="boost">
+                            <option id="yes" value="True">Поддерживает</option>
+                            <option id="no" value="False">Не поддерживает</option>
+                        </select>
+
+                    </p>
+                </fieldset>
+                    <h3>Расскажите о своем ПК</h3>
+                    <textarea form="" cols="100" rows="10" placeholder="Напишите о компьютере" maxlength="10000" minlength="10" required></textarea>                
+                <p>
+                    <label for="file">Загрузите файл:</label>
+                    <input type="file"name="file" id="file" >
+                </p>
+                <p>
+                    <label for="check">Согласен получать рассылку</label>
+                    <input type="checkbox"name="checkbox" id="checkbox" >
+                </p>
+                <p>
+                    <input type="submit"name="submit" id="submit" required>
+                </p>
+                </form> 
+            </section>
+            
+            <section class="content-block">
+                <h2>Адрес нашего офиса</h2>
+                <iframe id="mainvideo" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1840.7102568257203!2d37.60186715414436!3d55.617190244201296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414ab2f4ab7c8a4b%3A0x5c3404fab622afc1!2z0JrQuNGA0L7QstC-0LPRgNCw0LTRgdC60LDRjyDRg9C7LiwgMTgg0LrQvtGA0L_Rg9GBIDIsINCc0L7RgdC60LLQsCwgMTE3NTg3!5e0!3m2!1sru!2sru!4v1728419946895!5m2!1sru!2sru" 
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"></iframe></section>
+
+            </body>
+        </main>
+        <footer>
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h2>О нас</h2>
+                    <p>Лисовский Иван Валерьевич - студент МИРЭА, группы ИКБО-21-23. Сайт посвящен процессорам и их устройству. Преподаватель - Матчин Василий Тимофеевич.</p>
+                </div>
+                <div class="footer-section">
+                    <h2>Важные ссылки</h2>
+                    <ul>
+                        <li><a href="..\choose\choose.html">Выбор процессора</a></li>
+                        <li><a href="..\contact\contact.html">Обратная связь</a></li>
+                        <li><a href="..\processors\processors.html">О процессоре</a></li>
+                        <li><a href="..\blog\blog.html">Блог</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h2>Свяжитесь с нами</h2>
+                    <address>
+                        <a href="tel:89253937624">Номер</a><br>
+                        <a href="mailto:vanyakfhdx7@gmail.com">Почта</a>
+                    </address>
+                    <div class="footer_cards">
+                        <div class="footer_card">
+                          <div class="footer_gradientTG"></div>
+                            <img class="footer_social" src="https://cdn-icons-png.flaticon.com/512/87/87413.png">
+                          </div>
+                        <div class="footer_card">
+                            <div class="footer_gradientVK"></div>
+                              <img class="footer_social" src="https://upload.wikimedia.org/wikipedia/commons/9/9a/VK_Logo.png">
+                            </div>
+                        <div class="footer_card">
+                            <div class="footer_gradientGH"></div>
+                            <a href="https://github.com/cuwuvaa"><img class="footer_social" src="https://img.icons8.com/?size=512&id=106562&format=png"></a>
+                            </div>
+                      </div>
+                </div>
+            </div>
+            <a class="upper" href="#main_header">Наверх</a>
+        </footer>
+    </body>
+</html>

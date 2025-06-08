@@ -1,0 +1,347 @@
+.info
+{
+    color: #28533a;
+    width: 16%;
+    position: relative;
+    float: right;
+    background-color: #5bc5bb;
+    box-shadow: 0 0 5px;
+    padding: 1vw;
+    overflow: hidden;
+}
+
+.content-block h2
+{
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 30px;
+}
+
+
+.grid-item {
+    background-color: #4faaa1;
+    padding: 30px;
+    z-index: 0;
+    border:4px solid #45938b;
+    color: white;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    position: relative;
+    border-radius: 1rem;
+    overflow:visible;
+    backdrop-filter: blur(10px);
+    background: rgba(13, 128, 124, 0.5);
+    border: 1px solid rgba(53, 113, 129, 0.8);
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.grid_img {
+    mix-blend-mode:difference;
+    right: 0;
+    bottom: 0;
+    margin:10px;
+    width: 100px;
+    z-index: -1;
+    position: fixed;
+    transition: all 0.3s ease;
+}
+
+
+
+.large {
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+
+.wide_img
+{
+    mix-blend-mode:difference;
+    right: 0;
+    bottom: 0;
+    margin:10px;
+    width: 100px;
+    z-index: -1;
+    position: fixed;
+    transition: all 0.3s ease;
+}
+
+.wide {
+
+    grid-column: span 2;
+}
+
+.highlight {
+    background: rgba(19, 66, 65, 0.5);
+}
+
+.cache
+{
+    background: rgba(53, 127, 81, 0.5);
+}
+
+.cu
+{
+    background: rgba(53, 102, 127, 0.5);
+}
+
+.reg
+{
+    background: rgba(60, 53, 127, 0.5);
+}
+.tact
+{
+    background: rgba(124, 60, 124, 0.5);
+}
+.core
+{
+    background: rgba(55, 118, 67, 0.5);
+}
+
+aside ul {
+    list-style:circle;
+}
+
+.content-block {
+    display: block;
+    margin: 20px auto;
+    padding: 20px;
+    width: 60%;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    padding: 2rem;
+    border:solid 2px #45938b; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+a {
+    font-family: "Jura", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    color: #517961;
+    text-decoration: none;
+}
+
+section dl dt {
+    font-family: "Jura", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+section dl dd {
+    font-family: "Jura", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    text-align: center;
+}
+
+section ol li {
+    font-family: "Jura", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+
+p {
+    margin-bottom: 1rem;
+
+}
+
+@media (min-width: 767px) 
+{
+    #mainvideo
+    {
+        width: 59vw;
+    }
+    .gallery
+    {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap:10px;
+    }
+    
+    .gallery > li
+    {
+        cursor: pointer;
+        flex-basis: 250px;
+        flex-grow: 1;
+        position: relative;
+        text-align: center;
+    }
+    
+    .gallery li img {
+        object-fit: cover;
+        width: 100%; 
+        height: 100%; 
+        vertical-align: middle; 
+        border-radius: 5px;
+     }
+    
+     .overlay 
+     { 
+        position: absolute;
+        width: 100%;
+        height: 100%; 
+        background: rgba(92, 92, 92, 0.502); 
+        top: 0; 
+        left: 0; 
+        transform: scale(0); 
+        transition: all 0.2s 0.1s ease-in-out; 
+        color: #89f2e9; 
+        border-radius: 5px; 
+        font-weight: bold;
+        display: flex; 
+        align-items: center; 
+        justify-content: center; }
+    
+     .gallery li:hover .overlay 
+     { 
+        transform: scale(1); 
+    }
+
+    section.card-block  
+    {
+        border-block: solid 4px #45938b;
+        display: block;
+        font-family: Arial, sans-serif;
+        background-color: #f7f7f7;
+        text-align: center; 
+        margin-left: -10px;
+        box-shadow: 10 10px 8px rgba(0, 0, 0, 1);
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 767px) {
+    #mainvideo
+    {
+        width: 100%;
+    }
+    .gallery
+    {
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap:10px;
+    }
+    
+    .gallery > li
+    {
+        cursor: pointer;
+        flex-basis: 250px;
+        flex-grow: 1;
+        position: relative;
+        text-align: center;
+    }
+    
+    .gallery li img {
+        object-fit: cover;
+        width: 100%; 
+        height: 100%; 
+        vertical-align: middle; 
+        border-radius: 5px;
+     }
+    
+     .overlay 
+     { 
+        position: absolute;
+        width: 100%;
+        height: 100%; 
+        background: rgba(92, 92, 92, 0.502); 
+        top: 0; 
+        left: 0; 
+        transform: scale(0); 
+        transition: all 0.2s 0.1s ease-in-out; 
+        color: #89f2e9; 
+        border-radius: 5px; 
+        font-weight: bold;
+        display: flex; 
+        align-items: center; 
+        justify-content: center; }
+    
+     .gallery li:hover .overlay 
+     { 
+        transform: scale(1); 
+    }
+
+    .info
+    {
+        float: none;
+        border: none;
+        text-align: center;
+        width: inherit;
+        height: 29%;
+        margin-bottom: 10vw;
+    }
+    .content-block
+    {
+        width: 80%;
+    }
+}
+
+@media (min-width:678px)
+{
+    .wide:hover img
+    {
+        scale: 1.8;
+        filter: blur(0px);
+        filter:invert(0.5);
+        margin-right: 50px;
+        margin-bottom: 30px;
+    }
+    .large:hover img
+    {
+    width: 15vw;
+    filter: brightness(0.5);
+    margin-right: 80%;
+}
+.grid-item:hover {
+    transform: scale(1.1);
+    background: rgba(35, 166, 83, 0.5);
+}
+
+.grid-item:hover img
+{
+    margin-bottom: 40px;
+    scale: 1.5;
+    margin-right: 10vw;
+    filter: blur(2px);
+    transition: all 0.3s ease;
+}
+.highlight:hover {
+    transform: scale(1.2);
+}
+
+}
+
+@media (max-width: 677px)
+{
+    .grid-container
+    {
+        display: block;
+    }
+    .grid-item
+    {
+        margin-block:10px;
+    }
+    .grid_img, .wide_img
+    {
+        top:0;
+        width:50%;
+        filter:blur(2px);
+        position: absolute;
+    }
+    
+}

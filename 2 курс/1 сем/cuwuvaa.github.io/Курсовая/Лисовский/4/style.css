@@ -1,0 +1,460 @@
+/* General styling for elements */
+h1, h2, h3, h4, input, label, legend {
+    font-family: "Jura", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+#main_header {
+    top: 0;
+    z-index: 100;
+    height: 100px;
+    background-color: #5bc5bb;
+    color: #28533a;
+    padding: 2%;
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+#main_cite {
+    text-align: left;
+    margin-top: 2%;
+    margin-left: 8vw;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+#logo_img {
+    margin-left: 2vw;
+    top: 0;
+    float: left;
+    width: 100px;
+}
+
+.enter {
+    color: #28533a;
+    position: relative;
+    float: right;
+    width: 200px;
+    background-color: #5bc5bb;
+    padding: 10px;
+    box-shadow: 0 0 5px;
+    margin: 10px;
+}
+
+#enter_cite {
+    z-index: 200;
+}
+
+#enter_cite input[type="submit"] {
+    padding: 10px;
+    color: #28533a;
+    background-color: #52afa7;
+    border: 5px solid #45938b;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+#enter_cite input[type="submit"]:hover {
+    background-color: #448f87;
+    color: white;
+    border: 1px solid #38706b;
+}
+
+#cpu_img {
+    border-radius: 5%;
+    box-shadow: 0 0 5px;
+    margin-top: 20px;
+    margin-bottom: -20px;
+    width: 100%;
+    height: 30%;
+}
+
+
+
+/* Mobile layout */
+@media (max-width: 767px) {
+   
+    /* Make aside for login move below main content in mobile version */
+    aside.enter {
+        border-radius: 8px;
+        position: static;
+        width: 70%;
+        margin-right: 12.5%;
+        margin-top: 20px;
+        margin-bottom: 10%;
+    }
+    
+    .content-block {
+        width: 90%;
+    }
+    
+    /* Make aside follow the main content in mobile version */
+    aside.info {
+        border-radius: 8px;
+        margin-right: 12.5%;
+        width: 70%;
+    }
+    
+    .content-block {
+        width: 90%;
+    }
+}
+
+nav li {
+    list-style: none;
+}
+
+nav a {
+    font-weight: bold;
+    color: #28533a;
+    background-color: #52afa7;
+    display: block;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-decoration: overline;
+    border-width: thick;
+    border-radius: 10px;
+    border-color: black;
+    box-shadow: black;
+    border: 5px solid #45938b;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #448f87;
+    color: white;
+    border: 1px solid #38706b;
+}
+
+.info {
+    position: relative;
+    float: right;
+    width: 200px;
+    background-color: #5bc5bb;
+    padding: 10px;
+    box-shadow: 0 0 5px;
+    margin: 10px;
+}
+
+aside ul {
+    list-style: square;
+}
+
+/* Content Blocks */
+.content-block {
+    display: block;
+    margin: 20px auto;
+    padding: 20px;
+    width: 60%;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+section.fact {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    margin: 20px auto;
+    width: 70%;
+}
+
+/* Image Map */
+#image_map_section {
+    padding: 20px;
+    text-align: center;
+}
+
+.procsmap {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Footer */
+footer {
+    padding: 2%;
+    border-radius: 10px;
+    background-color: #5bc5bb;
+    color: #28533a;
+    text-align: center;
+    width: 100%;
+    position: static;
+    margin-top: 50px;
+}
+
+footer a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #517961;
+}
+
+footer a:hover {
+    color: #234744;
+}
+
+#img_processors {
+    width: 10vw;
+    border-radius: 10px;
+}
+
+/* Typography for lists and descriptions */
+section dl dt {
+    font-family: "Jura", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+section dl dd {
+    font-family: "Jura", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    text-align: center;
+}
+
+section ol li {
+    font-family: "Jura", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+/* Miscellaneous */
+a {
+    font-family: "Jura", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    color: #517961;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #234744;
+    text-decoration: underline;
+}
+
+/* Стили для блока формы */
+section.content-block {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Стили для полей ввода текста */
+input[type="text"], input[type="tel"], select, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    font-size: 1rem;
+}
+
+/* Стили для полей ввода в фокусе */
+input[type="text"]:focus, input[type="tel"]:focus, select:focus, textarea:focus {
+    border-color: #66afe9;
+    outline: none;
+    box-shadow: 0 0 5px rgba(102, 175, 233, 0.6);
+    background-color: #eef;
+}
+
+/* Стили для radio кнопок */
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Стили для select */
+select {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+select:focus {
+    border-color: #66afe9;
+    background-color: #eef;
+}
+
+/* Стили для поля textarea */
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Стили для кнопки отправки формы */
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Стили для блока с файловым вводом */
+input[type="file"] {
+    margin-top: 10px;
+}
+
+/* Стили для фокусированных элементов */
+input[type="submit"]:focus, input[type="file"]:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(102, 175, 233, 0.6);
+}
+
+/* Стили для чекбокса */
+input[type="checkbox"] {
+    margin-left: 10px;
+}
+
+/* Стили для label */
+label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* Внешние отступы для абзацев */
+p {
+    margin-bottom: 1rem;
+}
+
+/* Стили для поля с частотой процессора */
+select#frequency {
+    background-color: #f9f9f9;
+}
+
+select#frequency:focus {
+    background-color: #eef;
+}
+
+/* Стиль для "Поддержка увеличении частоты" */
+#yes:checked {
+    background-color: #5bc5bb;
+    color: white;
+}
+
+#no:checked {
+    background-color: rgba(107, 71, 71, 0.398);
+    color: white;
+}
+
+/* Добавляем бургер меню */
+#burger_toggle {
+
+    display: none; /* Скрыть чекбокс */
+}
+
+.burger_menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+    z-index: 200;
+    position: fixed; /* Добавлено фиксированное позиционирование */
+    top: 10px; /* Позиция сверху */ /* Позиция справа */
+}
+
+.burger_menu span {
+    position: sticky;
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: #28533a;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Анимация для бургер-меню */
+#burger_toggle:checked + .burger_menu span:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+}
+
+#burger_toggle:checked + .burger_menu span:nth-child(2) {
+    opacity: 0;
+}
+
+#burger_toggle:checked + .burger_menu span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+@media (min-width: 767px) 
+{
+    nav {
+        padding-left: 2%;
+        padding-right: 2%;
+        padding-top: 1px;
+        padding-bottom: 1px;
+        position: sticky;
+        z-index: 100;
+        top: 0;
+        width: 100%;
+        background-blend-mode: screen;
+        background-size: 100vw;
+        background-color: #4faaa1;
+        background-image: url("https://kartinki.pics/uploads/posts/2021-07/1626839003_32-kartinkin-com-p-cherno-biryuzovii-fon-krasivo-32.jpg");
+        border: 2px solid #45938b;
+        border-radius: 8px;
+    }
+    
+    nav ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+}
+
+
+
+
+/* Показать меню на мобильной версии */
+
+
+
+/* Mobile layout */
+@media (max-width: 767px) {
+  
+    .burger_menu {
+        position: sticky;
+        display: flex;
+    }
+
+    nav {
+        background-blend-mode: screen;
+        background-size: 100vw;
+        background-color: #4faaa1;
+        background-image: url("https://kartinki.pics/uploads/posts/2021-07/1626839003_32-kartinkin-com-p-cherno-biryuzovii-fon-krasivo-32.jpg");
+        padding: 1vw;
+    }
+
+    nav ul {
+        list-style: none;
+        margin-right: 10vw;
+        margin-bottom: 10vw;
+        display: block;
+    }
+
+    nav ul a
+    {
+        text-align: center;
+    }
+   
+}

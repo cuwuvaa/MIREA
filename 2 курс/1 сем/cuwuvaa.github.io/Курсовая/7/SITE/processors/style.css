@@ -1,0 +1,200 @@
+.info
+{
+    color: #28533a;
+    width: 16%;
+    position: relative;
+    float: right;
+    background-color: #5bc5bb;
+    box-shadow: 0 0 5px;
+    padding: 1vw;
+    overflow: hidden;
+}
+
+.content-block h2
+{
+    text-align: center;
+}
+
+
+aside ul {
+    list-style: square;
+}
+
+.content-block {
+    display: block;
+    margin: 20px auto;
+    padding: 20px;
+    width: 60%;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    padding: 2rem;
+    border:solid 2px #45938b; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+a {
+    font-family: "Jura", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    color: #517961;
+    text-decoration: none;
+}
+
+section dl dt {
+    font-family: "Jura", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+section dl dd {
+    font-family: "Jura", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    text-align: center;
+}
+
+section ol li {
+    font-family: "Jura", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+
+p {
+    margin-bottom: 1rem;
+
+}
+
+@media (min-width: 767px) 
+{
+    #mainvideo
+    {
+        width: 59vw;
+    }
+    .gallery
+    {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap:10px;
+    }
+    
+    .gallery > li
+    {
+        cursor: pointer;
+        flex-basis: 250px;
+        flex-grow: 1;
+        position: relative;
+        text-align: center;
+    }
+    
+    .gallery li img {
+        object-fit: cover;
+        width: 100%; 
+        height: 100%; 
+        vertical-align: middle; 
+        border-radius: 5px;
+     }
+    
+     .overlay 
+     { 
+        position: absolute;
+        width: 100%;
+        height: 100%; 
+        background: rgba(92, 92, 92, 0.502); 
+        top: 0; 
+        left: 0; 
+        transform: scale(0); 
+        transition: all 0.2s 0.1s ease-in-out; 
+        color: #89f2e9; 
+        border-radius: 5px; 
+        font-weight: bold;
+        display: flex; 
+        align-items: center; 
+        justify-content: center; }
+    
+     .gallery li:hover .overlay 
+     { 
+        transform: scale(1); 
+    }
+
+    section.card-block  
+    {
+        border-block: solid 4px #45938b;
+        display: block;
+        font-family: Arial, sans-serif;
+        background-color: #f7f7f7;
+        text-align: center; 
+        margin-left: -10px;
+        box-shadow: 10 10px 8px rgba(0, 0, 0, 1);
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 767px) {
+    #mainvideo
+    {
+        width: 59vw;
+    }
+    .gallery
+    {
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap:10px;
+    }
+    
+    .gallery > li
+    {
+        cursor: pointer;
+        flex-basis: 250px;
+        flex-grow: 1;
+        position: relative;
+        text-align: center;
+    }
+    
+    .gallery li img {
+        object-fit: cover;
+        width: 100%; 
+        height: 100%; 
+        vertical-align: middle; 
+        border-radius: 5px;
+     }
+    
+     .overlay 
+     { 
+        position: absolute;
+        width: 100%;
+        height: 100%; 
+        background: rgba(92, 92, 92, 0.502); 
+        top: 0; 
+        left: 0; 
+        transform: scale(0); 
+        transition: all 0.2s 0.1s ease-in-out; 
+        color: #89f2e9; 
+        border-radius: 5px; 
+        font-weight: bold;
+        display: flex; 
+        align-items: center; 
+        justify-content: center; }
+    
+     .gallery li:hover .overlay 
+     { 
+        transform: scale(1); 
+    }
+
+    .info
+    {
+        float: none;
+        border: none;
+        text-align: center;
+        width: inherit;
+        height: 29%;
+        margin-bottom: 10vw;
+    }
+}

@@ -1,0 +1,281 @@
+/* Ваши существующие стили */
+
+/* Общие стили для элементов */
+h1, h2, h3, h4, input, label, legend,a, div {
+    font-family: "Jura", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+p {
+    font-family: "Jura", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+    
+}
+
+li {
+    padding-top: 10px;
+    font-family: "Jura", sans-serif;
+    font-weight: 10;
+    font-style: normal;
+}
+
+.back_div
+{
+    position: sticky;
+    top:10px;
+}
+
+#back
+{
+    width: max-content;
+    cursor: pointer;
+    font-weight: bold;
+    color: #28533a;
+    background-color: #52afa7;
+    display: block;
+    padding-inline: 10px;
+    text-decoration: none;
+    border-width: thick;
+    border-radius: 10px;
+    border-color: black;
+    box-shadow: black;
+    border: 5px solid #45938b;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+#back:hover
+{
+    text-decoration: none;
+    border: solid 1px;
+    transition: all 0.3s ease;
+    background-color: #4ba49d;
+}
+
+body {
+    z-index: 100;
+    background-color: #9bc2be;
+}
+
+/* Стили для header и footer */
+#main_cite {
+    text-align: left;
+    margin-top: 2%;
+    margin-left: 8vw;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+#logo_img {
+    margin-left: 2vw;
+    top: 0;
+    float: left;
+    width: 100px;
+    margin-right: 3vw;
+}
+
+#main_header {
+    top: 0;
+    height: 100px;
+    padding-block: 2%;
+    background-color: #5bc5bb;
+    color: #28533a;
+    border: 2px solid #45938b;
+    border-radius: 8px;
+    border-bottom: 0;
+    text-align: center;
+}
+
+
+footer {
+    border-radius: 10px;
+    background-color: #5bc5bb;
+    color: #28533a;
+    text-align: center;
+    position: static;
+    margin-top: 50px;
+    border: 2px solid #45938b;
+    border-radius: 8px;
+    padding-bottom: 1%;
+}
+
+footer a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #517961;
+}
+
+footer a:hover {
+    color: #234744;
+}
+
+.content-block h2 {
+    text-align: center;
+}
+
+/* Стили для контентных блоков */
+.content-block {
+    display: block;
+    margin: 20px auto;
+    padding: 20px;
+    width: 60%;
+    background-color: #f7f7f7;
+    border: solid 2px #45938b;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-image: url(https://thumb.ac-illust.com/a0/a08fb2bb11704469a0ce70d342f8aebf_t.jpeg);
+    background-color: #ffffff;
+    mix-blend-mode:normal;
+}
+
+
+
+.content-block h2
+{
+    background-color: white;
+    padding: 5px;
+    border: 2px solid #325854;
+    border-radius: 10px;
+}
+
+.p_content, .ul_first
+{
+    background-color: white;
+    padding: 5px;
+    border: 2px solid #325854;
+    border-radius: 10px;
+}
+
+.ul_first li
+{
+    background-color: #5bc5bb;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.ul_first li strong
+{
+    text-decoration: none;
+    color: rgb(58, 58, 58);
+}
+
+
+/* Скрываем чекбоксы */
+.toggle-input {
+    display: none;
+}
+
+.toggle-section
+{
+    z-index: 100;
+}
+
+
+/* Стили для заголовков */
+.toggle-header {
+    display: block;
+    cursor: pointer;
+    position: relative;
+    background-color: #45938b;
+    width: max-content;
+    padding: 10px;
+    border: 2px solid #325854;
+    border-radius: 10px;
+    color: white;
+    font-family: "Jura", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    margin-top: 20px;
+    user-select: none;
+    transition: background-color 0.3s;
+}
+
+/* Изменение цвета фона при наведении */
+.toggle-header:hover {
+    background-color: #3b7d72;
+}
+
+/* Добавляем стрелку */
+.toggle-header::after {
+    content: '▼';
+    position: absolute;
+    right: -25px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 1s;
+}
+
+/* Поворот стрелки при активном состоянии или наведении */
+.toggle-input:checked + .toggle-header::after,
+.toggle-header:hover::after {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+/* Скрываем контент по умолчанию */
+.toggle-content {
+    background-color: white;
+    opacity: 0;
+    border:2px solid #45938b ;
+    padding: 10px;
+    border-radius: 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 2s ease;
+}
+
+/* Показываем контент, когда чекбокс отмечен */
+.toggle-input:checked + .toggle-header + .toggle-content {
+    max-height: 1000px; /* Установите значение, достаточно большое для вашего контента */
+}
+
+
+
+/* Показываем контент при наведении на десктопах */
+@media (hover: hover) and (pointer: fine) {
+    .toggle-header:hover + .toggle-content {
+        max-height: 1000px;
+        z-index: 100;
+        position: relative;
+        opacity: 1;
+        transition: all 1s;
+    }
+    .toggle-input:checked~.toggle-content {
+        max-height: 1000px;
+        position: relative;
+        opacity: 1;
+        transition: all 1s;
+    }
+    .toggle-input:checked
+    {
+        margin-left: 100;
+    }
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 767px) {
+    .content-block {
+        width: 90%;
+    }
+    .toggle-input:checked~.toggle-content {
+        max-height: 1000px;
+        opacity: 1;
+        transition: all 1s;
+    }
+    .toggle-input:checked
+    {
+        margin-left: 100;
+    }
+}

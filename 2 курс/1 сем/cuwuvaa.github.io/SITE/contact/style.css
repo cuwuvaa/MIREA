@@ -1,0 +1,144 @@
+.content-block h2
+{
+    text-align: center;
+}
+
+
+aside ul {
+    list-style: square;
+}
+
+.content-block {
+    display: block;
+    margin: 20px auto;
+    padding: 20px;
+    width: 60%;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    padding: 2rem;
+    border:solid 2px #45938b; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"], input[type="tel"], select, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    font-size: 1rem;
+}
+
+/* Стили для полей ввода в фокусе */
+input[type="text"]:focus, input[type="tel"]:focus, select:focus, textarea:focus {
+    border-color: #66afe9;
+    outline: none;
+    box-shadow: 0 0 5px rgba(102, 175, 233, 0.6);
+    background-color: #eef;
+}
+
+/* Стили для radio кнопок */
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Стили для select */
+select {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+select:focus {
+    border-color: #66afe9;
+    background-color: #eef;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+input[type="file"] {
+    margin-top: 10px;
+}
+
+input[type="submit"]:focus, input[type="file"]:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(102, 175, 233, 0.6);
+}
+
+input[type="checkbox"] {
+    margin-left: 10px;
+}
+
+label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+a {
+    font-family: "Jura", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    color: #517961;
+    text-decoration: none;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+select#frequency {
+    background-color: #f9f9f9;
+}
+
+select#frequency:focus {
+    background-color: #eef;
+}
+
+/* Стиль для поддержки увеличении частоты */ 
+#yes:checked {
+    background-color: #5bc5bb;
+    color: white;
+}
+
+#no:checked {
+    background-color: rgba(107, 71, 71, 0.398);
+    color: white;
+}
+
+@media (min-width: 767px) 
+{
+    #mainvideo
+    {
+        width: 59vw;
+    }
+}
+
+@media (max-width: 767px) {
+    #mainvideo
+    {
+        width: 59vw;
+    }
+}

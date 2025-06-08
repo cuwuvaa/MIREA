@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Выбор процессора</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://everestpanel.com/assets/img/cpu.png">
+    <!-- Подключение стилей -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
+    <link rel="stylesheet" href="../../main.css">
+    <!-- Подключение шрифтов -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Lobster&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header id="main_header">
+        <img id="logo_img" src="C:\Users\ivank\Desktop\FrontEnd\icons\logo.png" alt="Логотип">
+        <h1 id="main_cite">Выбор процессора</h1>
+    </header>
+    <main>
+    <!-- Секция 1 -->
+
+    <div class="back_div"><a id="back" href="../../index.html">Назад</a></div>
+    <section class="content-block">
+        <h2>Определение целей использования компьютера</h2>
+        <p class="p_content">Первый и самый важный шаг при выборе процессора – четкое понимание задач, для которых будет использоваться компьютер. От этого зависят требования к производительности и функционалу процессора.</p>
+        <ul class="ul_first">
+            <li><strong>Игры:</strong> Для современных игр требуется мощный процессор с высокими тактовыми частотами и множеством ядер. Это обеспечит плавный игровой процесс и поддержку последних технологий.</li>
+            <li><strong>Профессиональная работа:</strong> Если вы занимаетесь 3D-моделированием, видеомонтажом или работаете с большими объемами данных, обратите внимание на процессоры с большим количеством ядер и потоков.</li>
+            <li><strong>Повседневные задачи:</strong> Для серфинга в интернете, работы с офисными программами и просмотра мультимедиа подойдет более бюджетный вариант с базовыми характеристиками.</li>
+            <li><strong>Серверные и специализированные задачи:</strong> Для серверов и рабочих станций необходимы процессоры с поддержкой многопоточности, высокой стабильностью и расширенными возможностями.</li>
+        </ul>
+    </section>
+
+    <!-- Секция 2 -->
+    <section class="content-block">
+        <h2>Технические характеристики процессора</h2>
+        <p class="p_content">Понимание технических параметров поможет сделать информированный выбор.</p>
+
+        <!-- Подразделы с раскрывающимся контентом -->
+        <div class="toggle-section">
+            <input type="checkbox" id="toggle-cores" class="toggle-input">
+            <label for="toggle-cores" class="toggle-header">Количество ядер и потоков</label>
+            <div class="toggle-content">
+                <p>Ядра – это независимые вычислительные блоки процессора. Потоки (Threads) позволяют каждому ядру обрабатывать несколько задач одновременно с помощью технологии многопоточности (например, Hyper-Threading у Intel или SMT у AMD).</p>
+                <ul>
+                    <li><strong>Двухъядерные процессоры:</strong> Подходят для базовых задач.</li>
+                    <li><strong>Четырехъядерные и выше:</strong> Оптимальны для игр и многозадачности.</li>
+                    <li><strong>Шестнадцатиядерные и выше:</strong> Для профессиональных и серверных приложений.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="toggle-section">
+            <input type="checkbox" id="toggle-frequency" class="toggle-input">
+            <label for="toggle-frequency" class="toggle-header">Тактовая частота</label>
+            <div class="toggle-content">
+                <p>Измеряется в ГГц и определяет скорость работы каждого ядра. Высокая частота способствует быстрому выполнению операций, особенно в однопоточных приложениях.</p>
+            </div>
+        </div>
+
+        <div class="toggle-section">
+            <input type="checkbox" id="toggle-cache" class="toggle-input">
+            <label for="toggle-cache" class="toggle-header">Кэш-память</label>
+            <div class="toggle-content">
+                <p>Кэш-память ускоряет доступ процессора к данным. Чем больше объем кэша (L1, L2, L3), тем выше производительность в определенных задачах.</p>
+            </div>
+        </div>
+
+        <div class="toggle-section">
+            <input type="checkbox" id="toggle-tdp" class="toggle-input">
+            <label for="toggle-tdp" class="toggle-header">Тепловыделение (TDP)</label>
+            <div class="toggle-content">
+                <p>TDP (Thermal Design Power) – это максимальное количество тепла, которое должен отводить кулер. Высокий TDP требует эффективного охлаждения и может увеличивать энергопотребление.</p>
+            </div>
+        </div>
+
+        <div class="toggle-section">
+            <input type="checkbox" id="toggle-igpu" class="toggle-input">
+            <label for="toggle-igpu" class="toggle-header">Встроенная графика</label>
+            <div class="toggle-content">
+                <p>Некоторые процессоры оснащены интегрированной графикой (iGPU), позволяющей выводить изображение без отдельной видеокарты. Это полезно для офисных ПК и бюджетных сборок.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция 3 -->
+    <section class="content-block">
+        <h2>Совместимость оборудования</h2>
+        <p class="p_content">Перед покупкой убедитесь, что процессор совместим с остальными компонентами системы.</p>
+
+        <div class="toggle-section">
+            <input type="checkbox" id="toggle-socket" class="toggle-input">
+            <label for="toggle-socket" class="toggle-header">Сокет</label>
+            <div class="toggle-content">
+                <p>Сокет – это разъем на материнской плате для установки процессора. Популярные сокеты:</p>
+                <ul>
+                    <li><strong>Intel:</strong> LGA 1700 для процессоров 12-го и 13-го поколения.</li>
+                    <li><strong>AMD:</strong> AM5 для новых Ryzen 7000, AM4 для предыдущих поколений.</li>
+                </ul>
+                <p>Материнская плата должна поддерживать сокет и чипсет, совместимый с выбранным процессором.</p>
+            </div>
+        </div>
+
+        <div class="toggle-section">
+            <input type="checkbox" id="toggle-bios" class="toggle-input">
+            <label for="toggle-bios" class="toggle-header">Обновление BIOS</label>
+            <div class="toggle-content">
+                <p>Иногда для поддержки нового процессора требуется обновление BIOS. Проверьте информацию на сайте производителя материнской платы.</p>
+            </div>
+        </div>
+
+        <div class="toggle-section">
+            <input type="checkbox" id="toggle-ram" class="toggle-input">
+            <label for="toggle-ram" class="toggle-header">Оперативная память</label>
+            <div class="toggle-content">
+                <p>Современные процессоры поддерживают DDR4 или DDR5 память. Убедитесь, что ваша память совместима с процессором и материнской платой.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция 4 -->
+    <section class="content-block">
+        <h2>Разгон и терморегуляция</h2>
+        <p class="p_content">Разгон (оверклокинг) позволяет увеличить производительность процессора выше заводских настроек.</p>
+
+        <div class="toggle-section">
+            <input type="checkbox" id="toggle-unlocked" class="toggle-input">
+            <label for="toggle-unlocked" class="toggle-header">Процессоры с разблокированным множителем</label>
+            <div class="toggle-content">
+                <p>Некоторые модели поддерживают разгон:</p>
+                <ul>
+                    <li><strong>Intel:</strong> Модели с индексом "K" (например, Core i7-13700K).</li>
+                    <li><strong>AMD:</strong> Все современные Ryzen имеют разблокированный множитель.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="toggle-section">
+            <input type="checkbox" id="toggle-motherboard" class="toggle-input">
+            <label for="toggle-motherboard" class="toggle-header">Материнские платы для разгона</label>
+            <div class="toggle-content">
+                <p>Для разгона необходима материнская плата с соответствующим чипсетом (Intel Z-серия, AMD B и X серии).</p>
+            </div>
+        </div>
+
+        <div class="toggle-section">
+            <input type="checkbox" id="toggle-cooling" class="toggle-input">
+            <label for="toggle-cooling" class="toggle-header">Охлаждение</label>
+            <div class="toggle-content">
+                <p>При разгоне увеличивается тепловыделение. Рекомендуется установить более эффективную систему охлаждения:</p>
+                <ul>
+                    <li><strong>Воздушное охлаждение:</strong> Кулеры с большим радиатором и тихими вентиляторами.</li>
+                    <li><strong>Жидкостное охлаждение:</strong> Системы СВО для максимального отвода тепла.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция 5 -->
+    <section class="content-block">
+        <h2>Бюджет и соотношение цена/производительность</h2>
+        <p class="p_content">Определение бюджета поможет сузить выбор и найти оптимальный вариант.</p>
+
+        <div class="toggle-section">
+            <input type="checkbox" id="toggle-budget" class="toggle-input">
+            <label for="toggle-budget" class="toggle-header">Бюджетные варианты</label>
+            <div class="toggle-content">
+                <p>Процессоры начального уровня подойдут для офисных задач и нетребовательных приложений. Примеры:</p>
+                <ul>
+                    <li>Intel Core i3 серии</li>
+                    <li>AMD Ryzen 3</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="toggle-section">
+            <input type="checkbox" id="toggle-midrange" class="toggle-input">
+            <label for="toggle-midrange" class="toggle-header">Средний сегмент</label>
+            <div class="toggle-content">
+                <p>Хороший выбор для геймеров и энтузиастов с ограниченным бюджетом:</p>
+                <ul>
+                    <li>Intel Core i5</li>
+                    <li>AMD Ryzen 5</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="toggle-section">
+            <input type="checkbox" id="toggle-highend" class="toggle-input">
+            <label for="toggle-highend" class="toggle-header">Высокий сегмент</label>
+            <div class="toggle-content">
+                <p>Максимальная производительность для профессионалов и требовательных пользователей:</p>
+                <ul>
+                    <li>Intel Core i7, i9</li>
+                    <li>AMD Ryzen 7, 9</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="toggle-section">
+            <input type="checkbox" id="toggle-value" class="toggle-input">
+            <label for="toggle-value" class="toggle-header">Цена/производительность</label>
+            <div class="toggle-content">
+                <p>Сравните модели в вашем ценовом диапазоне по тестам и обзорам, чтобы выбрать лучший вариант по соотношению цена/производительность.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция 6 -->
+    <section class="content-block">
+        <h2>Бренды и перспективность платформы</h2>
+        <p class="p_content">Выбор между Intel и AMD зависит от личных предпочтений и текущих предложений на рынке.</p>
+
+        <div class="toggle-section">
+            <input type="checkbox" id="toggle-intel" class="toggle-input">
+            <label for="toggle-intel" class="toggle-header">Intel</label>
+            <div class="toggle-content">
+                <p>Преимущества:</p>
+                <ul>
+                    <li>Высокая производительность на ядро.</li>
+                    <li>Широкая совместимость с различными компонентами.</li>
+                    <li>Хорошая поддержка технологий для игр.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="toggle-section">
+            <input type="checkbox" id="toggle-amd" class="toggle-input">
+            <label for="toggle-amd" class="toggle-header">AMD</label>
+            <div class="toggle-content">
+                <p>Преимущества:</p>
+                <ul>
+                    <li>Большее количество ядер и потоков за ту же цену.</li>
+                    <li>Длительная поддержка сокета AM4 (хотя сейчас переходит на AM5).</li>
+                    <li>Отличное соотношение цена/производительность.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="toggle-section">
+            <input type="checkbox" id="toggle-future" class="toggle-input">
+            <label for="toggle-future" class="toggle-header">Перспективность платформы</label>
+            <div class="toggle-content">
+                <p>Если планируется модернизация в будущем, стоит обратить внимание на новые сокеты и чипсеты, которые будут поддерживать следующие поколения процессоров.</p>
+            </div>
+        </div>
+    </section>
+    </main>
+    <footer>
+        <h2><b>Свяжитесь с нами</b></h2>
+        <address>
+            <a href="tel:0123456789">Номер</a><br>
+            <a href="mailto:vanyakfhdx7@gmail.com">Почта</a>
+        </address>
+        <a href="#main_header">Наверх</a>
+    </footer>
+
+</body>
+</html>

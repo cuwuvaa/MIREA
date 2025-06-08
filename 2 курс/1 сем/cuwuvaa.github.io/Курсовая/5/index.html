@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="https://everestpanel.com/assets/img/cpu.png">
+        <title>Современные процессоры</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="mobile.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Lobster&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    
+    </head> 
+    <body>
+        <header id="main_header">
+           <img id="logo_img" src="C:\Users\ivank\Desktop\FrontEnd\icons\logo.png">
+            <h1 id="main_cite">Современные процессоры</h1>
+            
+        </header>
+        <main>
+            <nav class="nav">
+                <input class="nav__check" type="checkbox" id="showmenu"/>
+                <label class="nav__showmenu" for="showmenu">
+                
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+                <label class="nav__back" for="showmenu"></label>
+                <ul class="menu">
+                  <li><a class="menu__item" href="#">Архитерктура</a></li>
+                  <li>
+                    <a class="menu__items">Процессоры</a>
+                    <input class="menu__check" type="checkbox" id="menu2">
+                    <label class="menu__showsub" for="menu2">&#9660;</label>
+                    <ul class="menu__submenu">
+                      <li><a class="menu__item" href="#">AMD</a></li>
+                      <li><a class="menu__item" href="#">Intel</a></li>
+                    </ul>
+                  </li>
+                  <li><a class="menu__item" href="#">Блог</a></li>
+                  
+                </ul>
+              </nav>
+
+            <aside class="enter">
+                <h1><b>Войти</b></h1>
+                <form id="enter_cite" action="" method="get">
+                    <p>
+                        <label for="useremail">Почта:</label><br>
+                        <input class="enter_cite" type="email"name="useremail" id="useremail" placeholder="abc@mail.com" required>
+                    </p>
+                    <p>
+                        <label for="userpassword">Пароль:</label>
+                        <input class="enter_cite" type="password"name="userpassword" id="userpassword" required min="10" pattern="[0-9]{4,}[A-Za-z]{4,}">
+                     </p>
+                     <p>   
+                        <input class="enter_cite" type="submit"name="LAP" id="submit" required>
+                    </p>
+                </form>
+            </aside>
+        
+        
+            <article>
+                <section class="content-block">  
+                    <h3>
+                        <cite><i>Центральный процессор</i></cite> является <u>одним из ключевых составляющих</u> элементов современного ПК. <br>Началом эпохи современных <abbr title="Central Processing Unit">CPU</abbr> можно смело назвать 1971-й год.<br> 
+                        <img id="cpu_img" src="https://hyperpc.ru/images/support/articles/cpu-2022/cpu-2022-content-01_webp.jpg" alt="cpu_img">
+                    </h3>
+                    
+                </section>
+            </article>
+
+            <aside class="info">
+                <h2><strong>Отличия </strong>современных процессоров от их предков</h2>
+                <ul>
+                    <li><b>Архитектура</b> и технология производства</li>
+                    <li><b>Мультипоточность</b> и многоядерность</li>
+                    <li><b>Интеграция</b> компонентов</li>
+                    <li><b>Энергоэффективность</b> и терморегуляция</li>
+                </ul>
+            </aside>
+            <section class="content-block">
+                <h2>
+                    Из чего состоит <strong>процессор</strong>?
+                </h2>
+                    <dl>
+                        <dt>Аритметико-логическое устройство</dt>
+                        <dd>Выполняет арифметические и логические операции</dd>
+                        <dt>Устройство управления</dt>
+                        <dd>Координирует работу всех компонентов процессора, управляет выполнением инструкций</dd>
+                        <dt>Регистры</dt>
+                        <dd>Небольшие области памяти внутри процессора для хранения промежуточных данных и адресов</dd>
+                        <dt>Кэш-память</dt>
+                        <dd>Быстрая память, используемая для хранения часто используемых данных и инструкций</dd>
+                        <dt>Шина данных</dt>
+                        <dd>Система соединений для передачи данных между процессором и другими компонентами компьютера</dd>
+                        <dt>Модуль ввода-вывода</dt>
+                        <dd>Отвечает за взаимодействие процессора с внешними устройствами</dd>
+                        <dt>Механизмы управления потоком</dt>
+                        <dd>Обеспечивают выполнение процессов и многозадачность</dd>
+                    </dl>
+                </section>
+
+            <section class="content-block">
+                <ul class="gallery">
+                    <li><img src="https://www.notebookcheck-ru.com/fileadmin/Notebooks/News/_nc3/PS5b6092.jpg"><div class="overlay"><span>Кристалл</span></div></li>
+                    <li><img src="https://occlub.ru/wp-content/uploads/2018/07/images_posts_news_2018_7_12_Cooper-IHS-for-Intel-CPU-2-768x473.jpg"><div class="overlay"><span>Медная крышка</span></div></li>
+                    <li><img src="https://www.techpowerup.com/img/11-03-08/49a.jpg"><div class="overlay"><span>Кристалл на плате</span></div></li>
+                    <li><img src="https://upload.wikimedia.org/wikipedia/commons/f/f5/Intel_Socket_1155.jpeg"><div class="overlay"><span>Сокет процессора</span></div></li>
+                    <li><img src="https://st.overclockers.ru/images/lab/2016/06/03/4/05_big.jpg"><div class="overlay"><span>Схема процессора</span></div></li>
+                </ul>
+            </section>
+            <section class="content-block">
+                <h2>Крупнейшие производители проццесоров в наше время<br>
+                <a href="https://www.amd.com/en.html"><img id="img_processors" src="https://avatars.mds.yandex.net/get-mpic/5209489/img_id6743988690230826636.jpeg/orig" alt="amd" width="100" height="100"></a>
+                <a href="https://www.intel.com/content/www/us/en/support/ru-banner-inside.html"><img id="img_processors" src="https://static.seekingalpha.com/uploads/2018/10/8/71188-15390467428299844_origin.jpg" alt="intel" width="100" height="100"></a>
+                </h2>
+            </section>
+
+            <section class="content-block">
+            <h2>Видео о том, как работает процессор</h2> 
+            <iframe id="mainvideo" width="720" height="405" src="https://rutube.ru/play/embed/5756bba7f972504c9020e8e9dca4a63a" frameBorder="0" allow="clipboard-write; autoplay"
+                webkitAllowFullScreen
+                mozallowfullscreen
+                allowFullScreen></iframe>
+  
+            </section>
+            
+            <section class="content-block">
+                <h2>Хотите поделиться конфигурацией своего компьютера?</h2>
+                <form action="" method="get">
+                <p>
+                    <label for="name">Имя:</label>
+                    <input type="text" name="name" id="name" placeholder="Иван" required>
+                </p>
+                <p>
+                    <label for="tel">Номер:</label>
+                    <input type="tel"name="tel" id="tel" placeholder="8(999)-999-99-99" required checked>
+                </p>
+                <fieldset>
+                    <legend>Процессор в вашем компьютере</legend>
+                    <p>
+                        <label for="processor_label">AMD: </label>
+                        <input type="radio"name="processor_label" id="processor_label" required><br>
+                        <label for="processor_label">Intel: </label>
+                        <input type="radio"name="processor_label" id="processor_label" required><br><br>
+                        <label id="select_frequency"  for="frequency">Частота процессора:</label><br>
+                        <select required name="frequency" id="frequency">
+                            <option value="default">-- Частота --</option>
+                            <option value="1.5-2">1.5GHz - 2GHz</option>
+                            <option value="1.5">2GHz - 2.5Ghz</option>
+                            <option value="1.5">2.5GHz - 3GHz</option>
+                            <option value="1.5">3GHz - 3.5GHz</option>
+                            <option value="1.5">3.5GHz - 4GHz</option>
+                            <option value="1.5">4GHz - 4.5GHz</option>
+                            <option value="1.5">4.5GHz - и более</option>
+                        </select><br>
+                        <label id="boost" for="boost">Поддержка увеличении частоты:</label><br>
+                        <select size="2" multiple required name="boost" id="boost">
+                            <option id="yes" value="True">Поддерживает</option>
+                            <option id="no" value="False">Не поддерживает</option>
+                        </select>
+
+                    </p>
+                </fieldset>
+                    <h3>Расскажите о своем ПК</h3>
+                    <textarea form="" cols="100" rows="10" placeholder="Напишите о компьютере" maxlength="10000" minlength="10" required></textarea>                
+                <p>
+                    <label for="file">Загрузите файл:</label>
+                    <input type="file"name="file" id="file" >
+                </p>
+                <p>
+                    <label for="check">Согласен получать рассылку</label>
+                    <input type="checkbox"name="checkbox" id="checkbox" >
+                </p>
+                <p>
+                    <input type="submit"name="submit" id="submit" required>
+                </p>
+                </form> 
+            </section>
+            
+            <section class="content-block">
+                <h2>Адрес нашего офиса</h2>
+                <iframe id="mainvideo" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1840.7102568257203!2d37.60186715414436!3d55.617190244201296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414ab2f4ab7c8a4b%3A0x5c3404fab622afc1!2z0JrQuNGA0L7QstC-0LPRgNCw0LTRgdC60LDRjyDRg9C7LiwgMTgg0LrQvtGA0L_Rg9GBIDIsINCc0L7RgdC60LLQsCwgMTE3NTg3!5e0!3m2!1sru!2sru!4v1728419946895!5m2!1sru!2sru" 
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"></iframe></section>
+
+            </body>
+        </main>
+        <footer>
+            <h2><b>Свяжитесь с нами</b></h2>
+            <address>
+                <a href="tel:0123456789">Номер</a><br>
+                <a href="mailto:vanyakfhdx7@gmail.com">Почта</a>
+            </address>
+            <a href="#main_header">Наверх</a>
+        </footer>
+    </body>
+</html>

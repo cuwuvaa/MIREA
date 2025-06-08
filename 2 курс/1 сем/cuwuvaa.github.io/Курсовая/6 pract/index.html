@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="icon" type="image/x-icon" href="https://everestpanel.com/assets/img/cpu.png">
+        <title>Современные процессоры</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="mobile.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Lobster&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    
+    </head> 
+    <body>
+        <header id="main_header">
+           <img id="logo_img" src="C:\Users\ivank\Desktop\FrontEnd\icons\logo.png">
+            <h1 id="main_cite">Современные процессоры</h1>
+            
+        </header>
+        <main>
+            <nav class="nav">
+                <input class="nav__check" type="checkbox" id="showmenu"/>
+                <label class="nav__showmenu" for="showmenu">
+                
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+                <label class="nav__back" for="showmenu"></label>
+                <ul class="menu">
+                  <li><a class="menu__item" href=".\SITE\choose\choose.html">Выбор процессора</a></li>
+                  <li><a class="menu__item" href=".\SITE\contact\contact.html">Обратная связь</a></li>
+                  <li><a class="menu__item" href=".\SITE\processors\processors.html">О процессоре</a></li>
+                  <li><a class="menu__item" href=".\SITE\blog\blog.html">Блог</a></li>
+                </ul>
+              </nav>
+              
+              <div class="notification-icon">
+                <input class="notification_check" type="checkbox" id="shownotification"/>
+                <label class="notification__showmenu" for="shownotification"><span class="icon">🔔</span></label>
+                <span class="badge">4</span>
+                <div class="notification-list">
+                    <ul>
+                        <li>List Item 1</li>
+                        <li>List Item 2</li>
+                        <li>List Item 3</li>
+                        <li>List Item 4</li>
+                    </ul>
+                </div>
+            </div>
+            <aside class="enter">
+                <h1><b>Войти</b></h1>
+                <form id="enter_cite" action="" method="get">
+                    <p>
+                        <label for="useremail">Почта:</label><br>
+                        <input class="enter_cite" type="email"name="useremail" id="useremail" placeholder="abc@mail.com" required>
+                    </p>
+                    <p>
+                        <label for="userpassword">Пароль:</label>
+                        <input class="enter_cite" type="password"name="userpassword" id="userpassword" required min="10" pattern="[0-9]{4,}[A-Za-z]{4,}">
+                     </p>
+                     <p>   
+                        <input class="enter_cite" type="submit"name="LAP" id="submit" required>
+                    </p>
+                </form>
+            </aside>
+        
+            <article>
+                <section class="content-block">  
+                    <h2>Историческая справка</h2>
+                    <h3>
+                        <cite><i>Центральный процессор</i></cite> является <u>одним из ключевых составляющих</u> элементов современного ПК. <br>Началом эпохи современных <abbr title="Central Processing Unit">CPU</abbr> можно смело назвать 1971-й год.<br> 
+                        <img id="cpu_img" src="https://hyperpc.ru/images/support/articles/cpu-2022/cpu-2022-content-01_webp.jpg" alt="cpu_img">
+                    </h3>
+                </section>
+            </article>
+            <section class="content-block">
+                <h2>Крупнейшие производители проццесоров в наше время<br>
+                <ul class="gallery">        
+                    <li><a href="https://www.amd.com/en.html"><img id="img_processors" src="https://avatars.mds.yandex.net/get-mpic/5209489/img_id6743988690230826636.jpeg/orig" alt="amd" width="250" height="250"></a></li>
+                    <li> <a href="https://www.intel.com/content/www/us/en/support/ru-banner-inside.html"><img id="img_processors" src="https://static.seekingalpha.com/uploads/2018/10/8/71188-15390467428299844_origin.jpg" alt="intel" width="250" height="250"></a></li>
+                   </ul>
+            </section>           
+
+            <section class="card-block">
+                <h2><b>Кадры с презентаций процессоров</h2>
+                    <ul class="gallery_proc">
+                        <li><img src="https://habrastorage.org/r/w1560/webt/ec/su/g6/ecsug6np0j3vq7it-r9xgm8dfxg.jpeg"><div class="overlay_proc"><h1>Презентация AMD</h1><h2>Презентация линеек процессоров AMD Ryzen в 2024 году</h2></div></li>
+                        <li><img src="https://i.4pda.ws/s/as6yz0dGicLfHyZz1r6cLalngoX7R8.jpg"><div class="overlay_proc"><h1>Презентация Intel</h1><h2>Презентация Intel линейки Lakefield в 2020 году</h2></div></li>
+            </ul></section>
+        </main>
+    </body>
+        <footer>
+            <h2><b>Свяжитесь с нами</b></h2>
+            <address>
+                <a href="tel:0123456789">Номер</a><br>
+                <a href="mailto:vanyakfhdx7@gmail.com">Почта</a>
+            </address>
+            <a href="#main_header">Наверх</a>
+        </footer>
+</html>

@@ -1,0 +1,116 @@
+.card-container {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  position: relative;
+}
+
+/* Стиль для карточек */
+.card {
+  position: relative;
+  width: 20rem;
+  height: 12rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+  background: rgba(0, 255, 247, 0.19);
+  border: 1px solid rgba(53, 113, 129, 0.2);
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.card-title
+{
+  font-weight: bold;
+}
+.card-content p
+{
+  margin-bottom: 2vw;
+}
+.card-link
+{
+  color: #ddd;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  padding: 10px;
+  justify-content: center;
+  border: 2px solid white;
+  border-radius: 10px;
+  font-style: italic;
+}
+
+.card-link:hover
+{
+  font-weight: bold;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+/* Эффект при наведении на карточку */
+.card:hover {
+  transform: scale(1.2);
+  z-index: 1;
+}
+
+/* Размытие всех карточек при наведении на одну */
+.card-container:hover .card {
+  filter: blur(5px);
+}
+
+/* Отмена размытия для наведенной карточки */
+.card-container:hover .card:hover {
+  filter: none;
+}
+
+/* Остальные ваши стили остаются без изменений */
+.gradient-bg {
+  position: absolute;
+  top: -20%;
+  left: -40%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(45deg, #ff6b6b, #29657a, #00f2ff);
+  transition: transform 0.5s ease;
+  z-index: 0;
+}
+
+.social {
+  right: 0;
+  bottom: 0;
+  margin: 10px 10px;
+  width: 100px;
+  z-index: -1;
+  position: fixed;
+  transition: all 0.3s ease;
+}
+
+.card:hover .social {
+  width: 200px;
+  margin-right: 100px;
+  filter: brightness(0.5);
+  transition: all 0.3s ease;
+}
+
+.card-content {
+  position: relative;
+  z-index: 1;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.card p {
+  color: #ddd;
+}
+
+.card:hover .gradient-bg {
+  transform: translate(20%, 0);
+}
+
+@keyframes move-bg {
+  0% { transform: translate(-100%,-100%); }
+  100% { transform: translate(100%, 100%); }
+}

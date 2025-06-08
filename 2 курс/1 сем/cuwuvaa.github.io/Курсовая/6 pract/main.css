@@ -1,0 +1,110 @@
+/* General styling for elements */
+h1, h2, h3, h4, input, label, legend,div
+{
+    font-family: "Jura", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+body
+{
+    background-color:#9bc2be;
+}
+
+#main_cite {
+    text-align: left;
+    margin-top: 2%;
+    margin-left: 8vw;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+#logo_img {
+    margin-left: 2vw;
+    top: 0;
+    float: left;
+    width: 100px;
+    margin-right: 3vw;
+}
+
+#main_header {
+    top: 0;
+    z-index: 100;
+    height: 100px;
+    margin-bottom: 50px;
+    padding-block: 2%;
+    background-color: #5bc5bb;
+    color: #28533a;
+    border: 2px solid #45938b;
+    border-radius: 8px;
+    border-bottom: 0;
+    text-align: center;
+}
+
+footer {
+    border-radius: 10px;
+    background-color: #5bc5bb;
+    color: #28533a;
+    text-align: center;
+    position: static;
+    margin-top: 50px;
+    border: 2px solid #45938b;
+    border-radius: 8px;
+    padding-bottom: 1%;
+}
+
+footer a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #517961;
+}
+
+footer a:hover {
+    color: #234744;
+}
+
+a {
+    font-family: "Jura", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    color: #517961;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #234744;
+    text-decoration: underline;
+}
+
+@media (max-width: 767px) {
+
+
+    #main_cite
+    {
+        text-align: center;
+    }
+
+    #enter_cite
+    {
+        text-align: center;
+        width: 1vw;
+    }
+
+    footer, #main_header
+    {
+        margin-left: -0.5vw;
+        width: 100vw;
+    }
+    footer {
+        border-radius: 10px;
+        background-color: #5bc5bb;
+        color: #28533a;
+        text-align: center;
+        width:100vw;
+        position: static;
+        margin-top: 50px;
+        border: 2px solid #45938b;
+        border-radius: 8px;
+        padding-bottom: 1%;
+    }
+}
